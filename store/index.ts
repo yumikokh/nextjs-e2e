@@ -1,7 +1,7 @@
 // 編集中のデータ管理
 
 import { Task } from "@prisma/client";
-import create from "zustand/react";
+import create from "zustand";
 
 type EditedTask = Omit<Task, "createdAt" | "updatedAt" | "userId">;
 
